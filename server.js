@@ -30,4 +30,4 @@ http.createServer((req, res) => {
     if (body.length) proxy.write(Buffer.concat(body));
     proxy.end();
   });
-}).listen(process.env.PORT || 3000, () => console.log('Proxy running'));
+}).listen(process.env.PORT || 8080, () => console.log('Proxy running'));
